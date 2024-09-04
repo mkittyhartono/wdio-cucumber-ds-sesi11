@@ -15,7 +15,7 @@ Feature: Login Test
     Examples:
     | username      | password     |
     | standard_user | secret_sauce |
-    | standard_user   | secret_saucefgfgf |
+    | value_user   | secret_saucefgfgf |
 
   @Negative @tc-02
   Scenario: Login with Wrong password

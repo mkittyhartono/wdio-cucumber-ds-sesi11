@@ -51,9 +51,9 @@ Then('user should see error message {string}', async (errorMessage) => {
 })
 
 When('user login using {string} as username and {string} as password', async (username, password) => { 
-  await LoginPage.inputUsername(username)
-  await LoginPage.inputPassword(password)
+  await LoginPage.login(username, password)
   await LoginPage.clickBtnLogin()
+  await LoginPage.validateWrongPassword(errorMessage)
 })
 
 

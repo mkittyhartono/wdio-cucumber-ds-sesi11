@@ -268,7 +268,7 @@ export const config = {
      */
     afterScenario: async function (world, result, context) {
         if (!result.passed) {
-            await browser.saveScreenshot('error2.png')
+            await browser.saveScreenshot('screenshot/failed-scenario.png')
         }
     },
     /**
